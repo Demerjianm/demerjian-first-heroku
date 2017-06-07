@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "build-production": "cd client/ && npm install --only=dev && npm install && npm run build",
-    "postinstall": "yarn buid-production"
+    "postinstall": "yarn build-production"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
