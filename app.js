@@ -4,7 +4,8 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/change-me');
+const dbUrl = process.env.MONGODB_URL ? process.env.MONGODB_URL : 'mongodb://localhost/demerjian-first-heroku'
+mongoose.connect('dbUrl');
 
 const app = express();
 
